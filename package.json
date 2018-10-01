@@ -1,4 +1,9 @@
 {
+  "name": "Guide to Torino",
+  "version": "1.0.0",
+  "private": true,
+  "main": "main.js",
+  "author": "Igal Kleiner",
   "devDependencies": {
     "@alrra/travis-scripts": "^3.0.1",
     "apache-server-configs": "^3.0.0",
@@ -26,7 +31,10 @@
     "run-sequence": "^2.2.1",
     "ssri": "^6.0.0",
     "strip-json-comments": "^2.0.1",
-    "travis-after-all": "^1.4.5"
+    "travis-after-all": "^1.4.5",
+    "ts-loader": "^5.2.1",
+    "webpack": "^4.20.2",
+    "webpack-cli": "^3.1.2"
   },
   "engines": {
     "node": ">=6",
@@ -47,12 +55,10 @@
   },
   "homepage": "https://html5boilerplate.com/",
   "license": "MIT",
-  "name": "html5-boilerplate",
   "scripts": {
     "build": "gulp build",
     "test": "gulp archive && mocha --require babel-core/register --reporter spec --timeout 5000"
   },
-  "version": "6.1.0",
   "description": "A professional front-end template for building fast, robust, and adaptable web apps or sites.",
   "files": [
     "CHANGELOG.md",
@@ -67,7 +73,9 @@
     "url": "https://github.com/h5bp/html5-boilerplate.git"
   },
   "dependencies": {
+    "common-js": "^0.3.8",
     "knockout": "^3.4.2",
+    "node": "^10.11.0",
     "underscore": "^1.9.1"
   }
 }
